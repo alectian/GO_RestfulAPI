@@ -1,9 +1,11 @@
 package router
 
 import (
-	"Server/API2/handler/sd"
-	"Server/API2/router/middleware"
 	"net/http"
+
+	"Server/API3/handler/sd"
+	"Server/API3/router/middleware"
+
 	"github.com/gin-gonic/gin"
 )
 

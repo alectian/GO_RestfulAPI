@@ -1,72 +1,49 @@
 package main
 
 import (
-	"errors"
+	"fmt"
 	"net/http"
-	"time"
 
 	"Server/API3/config"
 	"Server/API3/router"
 
 	"github.com/gin-gonic/gin"
-	"github.com/lexkong/log"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 )
 
 var (
-	cfg = pflag.StringP("config", "c", "", "apiserver config file path.")
+	cfg = pflag.StringP(
+		"config",             //名称
+		"c",                  //速记
+		"config/config.yaml", //配置文件路径
+		"config file usage",
+	)
 )
 
 func main() {
+	/*
+		在 main 函数中增加了 config.Init(*cfg) 调用，
+		用来初始化配置，
+		cfg 变量值从命令行 flag 传入，
+		可以传值，
+		比如 ./apiserver -c config.yaml，
+		也可以为空，
+		如果为空会默认读取 conf/config.yaml。
+	*/
 	pflag.Parse()
 
-	// init config
-	if err := config.Init(*cfg); err != nil {
+	err := config.Init(*cfg)
+	if err != nil {
 		panic(err)
 	}
 
-	// Set gin mode.
-	gin.SetMode(viper.GetString("runmode"))
-
-	// Create the Gin engine.
-	g := gin.New()
-
+	engine := gin.Default()
 	middlewares := []gin.HandlerFunc{}
-
-	// Routes.
-	router.Load(
-		// Cores.
-		g,
-
-		// Middlwares.
-		middlewares...,
-	)
-
-	// Ping the server to make sure the router is working.
-	go func() {
-		if err := pingServer(); err != nil {
-			log.Fatal("The router has no response, or it might took too long to start up.", err)
-		}
-		log.Info("The router has been deployed successfully.")
-	}()
-
-	log.Infof("Start to listening the incoming requests on http address: %s", viper.GetString("addr"))
-	log.Info(http.ListenAndServe(viper.GetString("addr"), g).Error())
+	router.Load(engine, middlewares...)
+	addr := viper.GetString("addr")
+	fmt.Print(viper.GetString("alec.name"))
+	http.ListenAndServe(addr, engine)
 }
 
-// pingServer pings the http server to make sure the router is working.
-func pingServer() error {
-	for i := 0; i < viper.GetInt("max_ping_count"); i++ {
-		// Ping the server by sending a GET request to `/health`.
-		resp, err := http.Get(viper.GetString("url") + "/sd/health")
-		if err == nil && resp.StatusCode == 200 {
-			return nil
-		}
 
-		// Sleep for a second to continue the next ping.
-		log.Info("Waiting for the router, retry in 1 second.")
-		time.Sleep(time.Second)
-	}
-	return errors.New("Cannot connect to the router.")
-}
