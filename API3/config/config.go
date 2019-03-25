@@ -1,11 +1,11 @@
 package config
 
 import (
-	"log"
-	"strings"
-
+	//"log"
 	"github.com/fsnotify/fsnotify"
+	"github.com/lexkong/log" //代码写到这里卡了半天,要手动替换log包
 	"github.com/spf13/viper"
+	"strings"
 )
 
 type Config struct {
@@ -13,7 +13,7 @@ type Config struct {
 }
 
 func Init(cfg string) error {
-	c := Config {
+	c := Config{
 		Name: cfg,
 	}
 
@@ -35,8 +35,8 @@ func (c *Config) initConfig() error {
 		viper.AddConfigPath("conf") // 如果没有指定配置文件，则解析默认的配置文件
 		viper.SetConfigName("config")
 	}
-	viper.SetConfigType("yaml") // 设置配置文件格式为YAML
-	viper.AutomaticEnv() // 读取匹配的环境变量
+	viper.SetConfigType("yaml")     // 设置配置文件格式为YAML
+	viper.AutomaticEnv()            // 读取匹配的环境变量
 	viper.SetEnvPrefix("APISERVER") // 读取环境变量的前缀为APISERVER
 	replacer := strings.NewReplacer(".", "_")
 	viper.SetEnvKeyReplacer(replacer)
@@ -47,10 +47,25 @@ func (c *Config) initConfig() error {
 	return nil
 }
 
+func (c *Config) initLog() {
+	passLagerCfg := log.PassLagerCfg{
+		Writers:        viper.GetString("log.writers"),
+		LoggerLevel:    viper.GetString("log.logger_level"),
+		LoggerFile:     viper.GetString("log.logger_file"),
+		LogFormatText:  viper.GetBool("log.log_format_text"),
+		RollingPolicy:  viper.GetString("log.rollingPolicy"),
+		LogRotateDate:  viper.GetInt("log.log_rotate_date"),
+		LogRotateSize:  viper.GetInt("log.log_rotate_size"),
+		LogBackupCount: viper.GetInt("log.log_backup_count"),
+	}
+
+	log.InitWithConfig(&passLagerCfg)
+}
+
 // 监控配置文件变化并热加载程序
 func (c *Config) watchConfig() {
 	viper.WatchConfig()
 	viper.OnConfigChange(func(e fsnotify.Event) {
-		log.Printf("Config file changed: %s", e.Name)
+		log.Infof("Config file changed: %s", e.Name)
 	})
 }
