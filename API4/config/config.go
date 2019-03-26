@@ -2,7 +2,7 @@ package config
 
 import (
 	"strings"
-	
+
 	"github.com/lexkong/log"
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
