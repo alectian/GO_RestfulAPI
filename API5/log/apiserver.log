@@ -1,3 +1,6 @@
 {"level":"INFO","timestamp":"2019-03-25 16:15:34.073","file":"config/config.go:71","msg":"Config file changed: config/config.yaml"}
 {"level":"INFO","timestamp":"2019-03-25 16:16:02.943","file":"config/config.go:71","msg":"Config file changed: config/config.yaml"}
 {"level":"INFO","timestamp":"2019-03-25 16:16:23.608","file":"config/config.go:71","msg":"Config file changed: config/config.yaml"}
+{"level":"ERROR","timestamp":"2019-03-26 11:43:18.266","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-26 11:44:20.161","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-26 16:10:39.611","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}

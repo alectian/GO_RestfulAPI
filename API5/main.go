@@ -6,6 +6,7 @@ import (
 
 	"Server/API5/config"
 	"Server/API5/router"
+	"Server/API5/model"
 
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/pflag"
@@ -37,6 +38,9 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
+	model.DB.Init()
+	defer model.DB.Close()
 
 	engine := gin.Default()
 	middlewares := []gin.HandlerFunc{}
