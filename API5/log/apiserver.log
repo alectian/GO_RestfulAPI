@@ -4,3 +4,4 @@
 {"level":"ERROR","timestamp":"2019-03-26 11:43:18.266","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
 {"level":"ERROR","timestamp":"2019-03-26 11:44:20.161","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
 {"level":"ERROR","timestamp":"2019-03-26 16:10:39.611","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-26 16:12:54.931","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
