@@ -1,0 +1,33 @@
+{"level":"INFO","timestamp":"2019-03-25 16:15:34.073","file":"config/config.go:71","msg":"Config file changed: config/config.yaml"}
+{"level":"INFO","timestamp":"2019-03-25 16:16:02.943","file":"config/config.go:71","msg":"Config file changed: config/config.yaml"}
+{"level":"INFO","timestamp":"2019-03-25 16:16:23.608","file":"config/config.go:71","msg":"Config file changed: config/config.yaml"}
+{"level":"ERROR","timestamp":"2019-03-26 11:43:18.266","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-26 11:44:20.161","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-26 16:10:39.611","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-26 16:12:54.931","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-27 11:48:31.482","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-27 11:48:50.579","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-27 11:49:09.773","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-27 11:50:27.075","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-27 11:50:52.964","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-27 11:51:17.088","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-27 11:52:06.544","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-27 12:01:16.280","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-27 13:29:21.107","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-27 13:29:30.489","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-27 13:48:55.937","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"DEBUG","timestamp":"2019-03-27 14:01:43.027","file":"user/create.go:26","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-03-27 14:01:43.027","file":"user/create.go:29","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username can not found in db: xx.xx.xx.xx"}}
+{"level":"DEBUG","timestamp":"2019-03-27 14:01:43.027","file":"user/create.go:33","msg":"err type is ErrUserNotFound"}
+{"level":"DEBUG","timestamp":"2019-03-27 14:01:59.310","file":"user/create.go:26","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-03-27 14:01:59.311","file":"user/create.go:29","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username can not found in db: xx.xx.xx.xx"}}
+{"level":"DEBUG","timestamp":"2019-03-27 14:01:59.311","file":"user/create.go:33","msg":"err type is ErrUserNotFound"}
+{"level":"DEBUG","timestamp":"2019-03-27 14:02:25.989","file":"user/create.go:26","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-03-27 14:02:25.989","file":"user/create.go:29","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username can not found in db: xx.xx.xx.xx"}}
+{"level":"DEBUG","timestamp":"2019-03-27 14:02:25.989","file":"user/create.go:33","msg":"err type is ErrUserNotFound"}
+{"level":"DEBUG","timestamp":"2019-03-27 14:03:58.089","file":"user/create.go:26","msg":"username is: [], password is [alec]"}
+{"level":"ERROR","timestamp":"2019-03-27 14:03:58.089","file":"user/create.go:29","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username can not found in db: xx.xx.xx.xx"}}
+{"level":"DEBUG","timestamp":"2019-03-27 14:03:58.089","file":"user/create.go:33","msg":"err type is ErrUserNotFound"}
+{"level":"DEBUG","timestamp":"2019-03-27 14:14:24.597","file":"user/create.go:26","msg":"username is: [], password is [alec]"}
+{"level":"ERROR","timestamp":"2019-03-27 14:14:24.597","file":"user/create.go:29","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username can not found in db: xx.xx.xx.xx"}}
+{"level":"DEBUG","timestamp":"2019-03-27 14:14:24.597","file":"user/create.go:33","msg":"err type is ErrUserNotFound"}
