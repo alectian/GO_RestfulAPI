@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"Server/API5/config"
-	"Server/API5/router"
-	"Server/API5/model"
+	"Server/API6/config"
+	"Server/API6/model"
+	"Server/API6/router"
 
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/pflag"
@@ -41,7 +41,7 @@ func main() {
 
 	model.DB.Init()
 	defer model.DB.Close()
-
+	
 	engine := gin.Default()
 	middlewares := []gin.HandlerFunc{}
 	router.Load(engine, middlewares...)
