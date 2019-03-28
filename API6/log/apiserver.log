@@ -45,3 +45,26 @@
 {"level":"ERROR","timestamp":"2019-03-27 14:19:51.450","file":"user/create.go:29","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username can not found in db: xx.xx.xx.xx"}}
 {"level":"DEBUG","timestamp":"2019-03-27 14:19:51.450","file":"user/create.go:33","msg":"err type is ErrUserNotFound"}
 {"level":"ERROR","timestamp":"2019-03-27 17:29:46.221","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-03-28 11:54:49.685","file":"model/model.go:32","msg":"Database connection failed. Database name: db_apiserver","data":{"error":"dial tcp 127.0.0.1:3306: connect: connection refused"}}
+{"level":"ERROR","timestamp":"2019-03-28 11:54:49.685","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"dial tcp 127.0.0.1:3306: connect: connection refused"}}
+{"level":"DEBUG","timestamp":"2019-03-28 11:59:20.619","file":"user/create.go:26","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-03-28 11:59:20.620","file":"user/create.go:29","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username can not found in db: xx.xx.xx.xx"}}
+{"level":"DEBUG","timestamp":"2019-03-28 11:59:20.620","file":"user/create.go:33","msg":"err type is ErrUserNotFound"}
+{"level":"DEBUG","timestamp":"2019-03-28 11:59:43.033","file":"user/create.go:26","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-03-28 11:59:43.033","file":"user/create.go:29","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username can not found in db: xx.xx.xx.xx"}}
+{"level":"DEBUG","timestamp":"2019-03-28 11:59:43.033","file":"user/create.go:33","msg":"err type is ErrUserNotFound"}
+{"level":"ERROR","timestamp":"2019-03-28 14:57:28.960","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"DEBUG","timestamp":"2019-03-28 14:57:32.910","file":"user/create.go:26","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-03-28 15:16:14.877","file":"user/create.go:29","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username can not found in db: xx.xx.xx.xx"}}
+{"level":"DEBUG","timestamp":"2019-03-28 15:16:14.886","file":"user/create.go:33","msg":"err type is ErrUserNotFound"}
+{"level":"DEBUG","timestamp":"2019-03-28 15:26:44.098","file":"user/create.go:26","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-03-28 15:32:13.813","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"DEBUG","timestamp":"2019-03-28 15:41:31.167","file":"user/create.go:26","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-03-28 15:43:12.635","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"DEBUG","timestamp":"2019-03-28 15:43:15.603","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-03-28 15:44:01.038","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"DEBUG","timestamp":"2019-03-28 15:44:09.090","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-03-28 16:50:08.532","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"DEBUG","timestamp":"2019-03-28 16:50:11.986","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-03-28 16:58:03.453","file":"user/create.go:30","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username can not found in db: xx.xx.xx.xx"}}
+{"level":"DEBUG","timestamp":"2019-03-28 16:58:03.453","file":"user/create.go:34","msg":"err type is ErrUserNotFound"}
