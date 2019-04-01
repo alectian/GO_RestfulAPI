@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"Server/API6/config"
-	"Server/API6/model"
-	"Server/API6/router"
+	"Server/API7/config"
+	"Server/API7/model"
+	"Server/API7/router"
 
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/pflag"

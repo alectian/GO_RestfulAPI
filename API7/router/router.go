@@ -1,11 +1,11 @@
 package router
 
 import (
-	"apiserver_demos/demo05/handler/user"
+	"Server/API7/user"
 	"net/http"
 
-	"Server/API6/handler/sd"
-	"Server/API6/router/middleware"
+	"Server/API7/handler/sd"
+	"Server/API7/router/middleware"
 
 	"github.com/gin-gonic/gin"
 )

@@ -2,7 +2,9 @@ package user
 import (
 	"fmt"
 	"net/http"
-	"Server/API6/pkg/errno"
+
+	"Server/API7/pkg/errno"
+
 	"github.com/gin-gonic/gin"
 	"github.com/lexkong/log"
 )
