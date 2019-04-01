@@ -68,3 +68,24 @@
 {"level":"DEBUG","timestamp":"2019-03-28 16:50:11.986","file":"user/create.go:27","msg":"username is: [], password is []"}
 {"level":"ERROR","timestamp":"2019-03-28 16:58:03.453","file":"user/create.go:30","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username can not found in db: xx.xx.xx.xx"}}
 {"level":"DEBUG","timestamp":"2019-03-28 16:58:03.453","file":"user/create.go:34","msg":"err type is ErrUserNotFound"}
+{"level":"ERROR","timestamp":"2019-03-29 10:45:43.046","file":"model/model.go:32","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"DEBUG","timestamp":"2019-03-29 10:45:56.294","file":"user/create.go:27","msg":"username is: [admin], password is [admin]"}
+{"level":"DEBUG","timestamp":"2019-03-29 10:46:34.977","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-03-29 10:46:34.977","file":"user/create.go:30","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username can not found in db: xx.xx.xx.xx"}}
+{"level":"DEBUG","timestamp":"2019-03-29 10:46:34.977","file":"user/create.go:34","msg":"err type is ErrUserNotFound"}
+{"level":"DEBUG","timestamp":"2019-03-29 10:46:43.906","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-03-29 10:46:43.906","file":"user/create.go:30","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username can not found in db: xx.xx.xx.xx"}}
+{"level":"DEBUG","timestamp":"2019-03-29 10:46:43.906","file":"user/create.go:34","msg":"err type is ErrUserNotFound"}
+{"level":"DEBUG","timestamp":"2019-03-29 10:46:52.939","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-03-29 10:46:52.939","file":"user/create.go:30","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username can not found in db: xx.xx.xx.xx"}}
+{"level":"DEBUG","timestamp":"2019-03-29 10:46:52.939","file":"user/create.go:34","msg":"err type is ErrUserNotFound"}
+{"level":"DEBUG","timestamp":"2019-03-29 10:47:09.908","file":"user/create.go:27","msg":"username is: [alec], password is [alecpwd]"}
+{"level":"DEBUG","timestamp":"2019-03-29 10:55:58.800","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-03-29 10:55:58.801","file":"user/create.go:30","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username can not found in db: xx.xx.xx.xx"}}
+{"level":"DEBUG","timestamp":"2019-03-29 10:55:58.801","file":"user/create.go:34","msg":"err type is ErrUserNotFound"}
+{"level":"DEBUG","timestamp":"2019-03-29 10:56:05.796","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2019-03-29 10:56:05.796","file":"user/create.go:30","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username can not found in db: xx.xx.xx.xx"}}
+{"level":"DEBUG","timestamp":"2019-03-29 10:56:05.796","file":"user/create.go:34","msg":"err type is ErrUserNotFound"}
+{"level":"DEBUG","timestamp":"2019-03-29 10:56:37.839","file":"user/create.go:27","msg":"username is: [alec], password is [alecpwd]"}
+{"level":"DEBUG","timestamp":"2019-03-29 11:10:35.703","file":"user/create.go:27","msg":"username is: [alec], password is [alecpwd]"}
+{"level":"DEBUG","timestamp":"2019-03-29 11:10:38.318","file":"user/create.go:27","msg":"username is: [alec], password is [alecpwd]"}
